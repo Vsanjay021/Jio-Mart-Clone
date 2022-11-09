@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div><img id="mainlogo"src="logo/mainlogo.png" alt=""></div>
+            <div><input type="text" class="search" placeholder="Search essentials, groceries, and more..."></div>
+            <div>
+            <img id ="loginicon"src="logo/login icon.png" alt="" >
+            <a href="signup.html" target="new page">Sign in / Sign up</a></div>
+            <div>
+            <img id="carticon" src="logo/cart logo 3.png" alt="">
+            <a href="cart.html" target="new page">Cart</a>
+        </div>
+
+        
+
+        </div>
+
+          <div id="slider">
+          </div>
+          <div class="buttons">
+           
+            <button id="b1" onclick="prev()" ><</button>
+            <button id="b2" onclick="next()">></button>
+          </div>
+
+          <div>
+            <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1667281294_bLOCK_BUSTER_dEALS_1_Desktop.jpg" alt="">
+            <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1662529571_Wednesday_Bonus.jpg" alt="">
+        </div>
+        <h2 id="td">Top Deals</h2>
+        <div  id="slider-main">
+            <div class="item">
+                <div class="text">
+                    <img src="https://www.jiomart.com/images/product/150x150/491208768/nivea-cocoa-nourish-deep-moisture-serum-oil-in-lotion-for-very-dry-skin-400-ml-product-images-o491208768-p590032380-0-202203141948.jpg" alt="">
+                    <h3>Nivea Cocoa Nourish Body Lotion</h3>
+                    <h3 class="hh">₹ 259.00</h3>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <img src="https://www.jiomart.com/images/product/150x150/491319789/sunfeast-dark-fantasy-original-choco-filled-biscuits-300-g-product-images-o491319789-p491319789-0-202205301919.jpg" alt="">
+                    <h3>sunfeast dark fantasy</h3>
+                    <h3 class="hh">₹ 125.00</h3>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <img src="https://www.jiomart.com/images/product/150x150/491186625/good-life-almonds-500-g-product-images-o491186625-p491186625-0-202205180139.jpg" alt="">
+                    <h3>good-life-almonds-500</h3>
+                    <h3 class="hh">₹ 349.00</h3>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <img src="https://www.jiomart.com/images/product/150x150/491208768/nivea-cocoa-nourish-deep-moisture-serum-oil-in-lotion-for-very-dry-skin-400-ml-product-images-o491208768-p590032380-0-202203141948.jpg" alt="">
+                    <h3>Nivea Cocoa Nourish Body Lotion</h3>
+                    <h3 class="hh">₹ 259.00</h3>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <img src="https://www.jiomart.com/images/product/150x150/491055460/colgate-strong-teeth-dental-cream-toothpaste-500-g-saver-pack-product-images-o491055460-p491055460-0-202203151056.jpg" alt="">
+                    <h3>colgate-strong-teeth-dental-cream-toothpaste-500-g</h3>
+                    <h3 class="hh"> ₹ 201.00</h3>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <img src="https://www.jiomart.com/images/product/150x150/490003834/maggi-2-minute-masala-instant-noodles-560-g-product-images-o490003834-p490003834-0-202203150702.jpg" alt="">
+                    <h3>maggi-2-minute-masala-instant-noodles-560-g</h3>
+                    <h3 class="hh">₹ 98.00</h3>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <img src="https://www.jiomart.com/images/product/150x150/491168270/daily-rice-25-kg-product-images-o491168270-p491168270-0-202203170741.jpg" alt="">
+                    <h3>daily-rice-25-kg</h3>
+                    <h3 class="hh">₹ 1099.00</h3>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <img src="https://www.jiomart.com/images/product/150x150/491208768/nivea-cocoa-nourish-deep-moisture-serum-oil-in-lotion-for-very-dry-skin-400-ml-product-images-o491208768-p590032380-0-202203141948.jpg" alt="">
+                    <h3>Nivea Cocoa Nourish Body Lotion</h3>
+                    <h3 class="hh">₹ 259.00</h3>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <img src="https://www.jiomart.com/images/product/150x150/490008739/parle-g-original-glucose-biscuits-800-g-product-images-o490008739-p490008739-0-202203170454.jpg" alt="">
+                    <h3>parle-g-original-glucose-biscuits-800-g</h3>
+                    <h3 class="hh">₹ 76.00</h3>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <img src="https://www.jiomart.com/images/product/150x150/491335765/ariel-matic-top-load-detergent-powder-4-kg-get-extra-2-kg-free-product-images-o491335765-p491335765-0-202203151011.jpg" alt="">
+                    <h3>ariel-matic-top-load-detergent-powder-4-kg</h3>
+                    <h3 class="hh">₹ 1223.00</h3>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <img src="https://www.jiomart.com/images/product/150x150/490006894/milky-mist-paneer-200-g-pack-product-images-o490006894-p490006894-0-202203170956.jpg" alt="">
+                    <h3>milky-mist-paneer-200-g</h3>
+                    <h3 class="hh">₹ 96.00</h3>
+                </div>
+            </div>
+        </div>
+        
+        <button id="bt1" onclick="prev1()"><</button>
+        <button id="bt2" onclick="next1()">></button>
+        <div class="mid">
+            <div><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1666083460_fortune.jpg" alt=""></div>
+            <div><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1667905014_Cold-Pressed-Oil-Belona-Ghee_600x350.jpg" alt=""></div>
+            <div><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1667906311_Organic-Range_600x350.jpg" alt=""></div>
+            <div><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1667473112_Organic-Range-for-Healthy-Diet-600-350.jpg" alt=""></div>
+            <div><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1667908012_Spices_600x350.jpg" alt=""></div>
+            <div><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1667459783_01--Staple-Store-_600x350.jpg" alt=""></div>
+        </div>
+
+        <h1 id="h">Top Electronics category</h1>
+        <div id="electronics">
+
+        </div>
+        <h1 id="h">Top Jewelery category</h1>
+        <div id="jewellery">
+            </div>
+
+        <h1 id="h">Daily Kitchen Essentials</h1>
+        <div id="kitchen">
+            <div>
+                <img src="Daily kitchen essentials/1.jpg" alt="">
+                <h3>good life almonds 500</h3>
+                <p>349.00</p>
+                <button>ADD TO CART</button>
+            </div>
+            <div>
+                <img src="Daily kitchen essentials/2.jpg" alt="">
+                <h3>Daily Rice 25kg</h3>
+                <p>1099</p>
+                <button>ADD TO CART</button>
+            </div>
+            <div>
+                <img src="Daily kitchen essentials/3.jpg" alt="">
+                <h3>GTS Original Kolam Rice 25 kg</h3>
+                <p>1915.00</p>
+                <button>ADD TO CART</button>
+            </div>
+            <div>
+                <img src="Daily kitchen essentials/4.jpg" alt="">
+                <h3>Fortune Sunlite Refined Sunflower Oil 5L</h3>
+                <p>865</p>
+                <button>ADD TO CART</button>
+            </div>
+            <div>
+                <img src="Daily kitchen essentials/5.jpg" alt="">
+                <h3>Tur / Arhar Dal 2 kg</h3>
+                <p>250</p>
+                <button>ADD TO CART</button>
+            </div>
+            <div>
+                <img src="Daily kitchen essentials/6.jpg" alt="">
+                <h3>Premium Sona Masuru Ricee 25 kg</h3>
+                <p>1169</p>
+                <button>ADD TO CART</button>
+            </div>
+            <div>
+                <img src="Daily kitchen essentials/7.jpg" alt="">
+                <h3>Sun Premium Refined Sunflower Oil 1L</h3>
+                <p>156</p>
+                <button>ADD TO CART</button>
+            </div>
+            <div>
+                <img src="Daily kitchen essentials/8.jpg" alt="">
+                <h3>Ruchi Gold Refined palmolein oil 1L</h3>
+                <p>109</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+        <h1 id="h">Top men's and women's clothing</h1>
+        <div id="clothing">
+        </div>
+        <div class="footer">
+            <div class="container2">
+                <div class="left">
+                    <h3>MOST POPULAR CATEGORIES</h3>
+                    <P>Staples</P>
+                    <P>Beverages</P>
+                    <P>Personal Care</P>
+                    <P>Home care</P>
+                    <P>Fruits and Vegetables</P>
+                    <P>Baby Care</P>
+                    <P>Snacks & Branded Foods</P>
+                    <P>Dairy & Bakery</P>
+                </div>
+                <div class="middle">
+                    <h3>CUSTOMER SERVICES</h3>
+                    <p>About Us</p>
+                    <p>FAQ</p>
+                    <p>Terms and conditions</p>
+                    <p>Privacy Policy</p>
+                    <p>E-waste Policy</p>
+                    <p>Cancellation and return policy</p>
+                </div>
+                <div class="right">
+                    <h3>CONTACT US</h3>
+                    <p>WhatsApp us : <span>7000370003</span></p>
+                    <p>Call Us : <span>18008901222</span></p>
+                    <p>8:00 AM to 8:00 PM,365 days</p>
+                    <p>Please note that you are accessing the BETA <br>
+                        Version of www.yourmart.com</p>
+                    <p>Should you encounter any bugs, glitches, lack <br> of functionality, delayed deliveries, billing errors <br> or other problems on the beta website, please <br> email us on cs@yourmart.com</p>
+                    <h3>DOWNLOAD APP</h3>
+                    <div>
+                        <img src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/play_store.png" alt="">
+                        <img src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/ios_store.png" alt="">
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="efooter">
+            <div><p>Best viewed on Microsoft Edge 81+, Mozilla Firefox 75+, Safari 5.1.5+, Google Chrome 80+</p></div>
+            <div><p>© 2022 All rights reserved. Sanjay Retail Ltd</p></div>
+        </div>
+
+        
+        
+        </section>
+</div>
+</body>
+
+</html>
+<script>
+    let img = [
+        "./slideimage/1.jpg",
+        "./slideimage/2.jpg",
+        "./slideimage/3.jpg",
+        "./slideimage/4.jpg",
+        "./slideimage/5.jpg",
+        "./slideimage/6.jpg"
+      ]
+        var count = 0;
+
+            function next(){
+                clearInterval(id);
+                // cont.innerHTML="";
+                count++;
+                if(count >= img.length){
+                    count = 0;
+                    cont.innerHTML = `<img src=${img[count]} alt="img${i}">`
+                }else{
+                    cont.innerHTML = `<img src=${img[count]} alt="img${i}">`
+                }
+            }
+
+
+      var i = 1
+      let cont = document.getElementById("slider")
+
+      cont.innerHTML = `<img src=${img[0]} alt="img${i}">`
+
+      function slider(){
+        cont.innerHTML = `<img src=${img[i]} alt="img${i}">`
+        i++;
+        if (i == img.length) {
+            i = 0
+        }
+      }
+
+      let id=setInterval(slider,2000);
+    
+        function prev(){
+            clearInterval(id);
+                    count--;
+                    if(count < 0){
+                     count = img.length -1;
+                    cont.innerHTML = `<img src=${img[count]} alt="img${i}">`
+                    }else{
+                        cont.innerHTML = `<img src=${img[count]} alt="img${i}">`
+                        }
+                }
+
+        
+
+           
+        
+            let slidermain=document.getElementById("slider-main");
+    let item=slidermain.getElementsByClassName("item");
+
+    function next1(){
+        slidermain.append(item[0]);
+    }
+
+    function prev1(){
+        slidermain.prepend(item[item.length-1])
+    }
+
+
+    let url1="https://fakestoreapi.com/products/category/electronics";
+    
+
+    async function getData(){
+        try{
+            let res=await fetch(url1);
+            let out=await res.json();
+            console.log(out);
+            displayBox(out);
+            // data=out;
+        }
+        catch(err){
+            console.log(err);
+        }
+    }
+    getData();
+
+    function displayBox(out){
+
+        out.forEach((elem,i) =>{
+            
+            let div=document.querySelector("#electronics");
+
+            let cdiv=document.createElement("div");
+
+            let image=document.createElement("img");
+            image.setAttribute("src",elem.image)
+
+            let title=document.createElement("h3");
+            title.innerText=elem.title;
+
+
+            let cat=document.createElement("h4");
+            cat.innerText=elem.category;
+
+            let price=document.createElement("h5");
+            price.innerText=elem.price;
+
+            let button=document.createElement("button");
+            button.innerText="ADD TO CART";
+
+            div.append(cdiv);
+            cdiv.append(image,title,cat,price,button);
+        })
+       
+    }
+
+    let url2="https://fakestoreapi.com/products/category/jewelery";
+
+    async function getData2(){
+        try{
+            let res=await fetch(url2);
+            let out2=await res.json();
+            console.log(out2);
+            displayBox2(out2);
+            // data=out;
+        }
+        catch(err){
+            console.log(err);
+        }
+    }
+       
+    getData2();
+    
+    function displayBox2(out){
+
+out.forEach((elem,i) =>{
+    
+    let div=document.querySelector("#jewellery");
+
+    let cdiv=document.createElement("div");
+
+    let image=document.createElement("img");
+    image.setAttribute("src",elem.image)
+
+    let title=document.createElement("h3");
+    title.innerText=elem.title;
+
+
+    let cat=document.createElement("h4");
+    cat.innerText=elem.category;
+
+    let price=document.createElement("h5");
+    price.innerText=elem.price;
+
+    let button=document.createElement("button");
+    button.innerText="ADD TO CART";
+
+    div.append(cdiv);
+    cdiv.append(image,title,cat,price,button);
+})
+
+}
+
+
+    let url3="https://fakestoreapi.com/products/category/women's clothing";
+    async function getData3(){
+        try{
+            let res=await fetch(url3);
+            let out3=await res.json();
+            console.log(out3);
+            displayBox3(out3);
+            // data=out;
+        }
+        catch(err){
+            console.log(err);
+        }
+    }
+       
+    getData3();
+
+    function displayBox3(out){
+
+out.forEach((elem,i) =>{
+    
+    let div=document.querySelector("#clothing");
+
+    let cdiv=document.createElement("div");
+
+    let image=document.createElement("img");
+    image.setAttribute("src",elem.image)
+
+    let title=document.createElement("h3");
+    title.innerText=elem.title;
+
+
+    let cat=document.createElement("h4");
+    cat.innerText=elem.category;
+
+    let price=document.createElement("h5");
+    price.innerText=elem.price;
+
+    let button=document.createElement("button");
+    button.innerText="ADD TO CART";
+
+    div.append(cdiv);
+    cdiv.append(image,title,cat,price,button);
+})
+
+}
+
+let url4="https://fakestoreapi.com/products/category/men's clothing";
+
+async function getData4(){
+        try{
+            let res=await fetch(url4);
+            let out4=await res.json();
+            console.log(out4);
+            displayBox3(out4);
+            // data=out;
+        }
+        catch(err){
+            console.log(err);
+        }
+    }
+       
+    getData4();
+
+</script>
