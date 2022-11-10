@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="home.css">
+    
+</head>
+<body>
+<div class="header">
+    <div>
+        <img id="mainlogo"src="logo/mainlogo.png" alt="" 
+        onclick="window.location.href='home.html'">
+    </div>
+    <div>
+    <input type="text" class="search" placeholder="Search essentials, groceries, and more...">
+    </div>
+    <div>
+        <img id ="loginicon"src="logo/login icon.png" alt="" >
+        <a>Sign in</a>
+    </div>
+    <div>
+    <img id="carticon" src="logo/cart logo 3.png" alt="">
+    <a href="cart.html" >Cart</a>
+</div>
+</div>
+        <div class="cont">
+            <div>
+                <img src="https://www.jiomart.com/msassets/images/login-banner.jpg" alt="">
+            </div>
+            <div id="signmain">
+                <div>
+                    <h2>Sign in</h2>
+                    <p>Sigh in to access your Orders, Offers and Wishlist</p>
+                </div>
+               
+                <div>
+                    <form >
+                        <div><input type="email", id="siemail" placeholder="Enter your Email"></div>
+                        <div><input type="password", id="sipwd" placeholder="Enter your Password"></div>
+                        <div><input type="submit" value=">" id="sisubmit"></div>
+                        <div id="dhaa"><p>Don't have an account <a href="signup.html" style="text-decoration: none ; color:#35E5EA"> Sign up </a></p></div>
+                    </form>
+                </div>
+            </div>
+    
+        </div>
+        
+    
+   
+   
+</body>
+</html>
+
+<script>
+    let form=document.querySelector("form");
+    console.log(form);
+    let formData=JSON.parse(localStorage.getItem("data"));
+    
+
+    form.addEventListener("submit",function(e){
+        e.preventDefault();
+        let email=document.getElementById("siemail").value,
+        password=document.getElementById("sipwd").value;
+        let exist=formData.length && 
+            formData.some(data =>
+            data.email.toLowerCase()==email.toLowerCase() &&
+            data.pwd.toLowerCase()==password.toLowerCase()
+            );
+
+            if(!exist){
+                alert("Incorrect login credentials");
+            }
+            else{
+
+               location.href="user.html";
+            }
+    })
+</script>
