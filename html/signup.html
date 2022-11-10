@@ -5,8 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    sign in page
+    <div class="header">
+        <div>
+            <img id="mainlogo"src="logo/mainlogo.png" alt="" 
+            onclick="window.location.href='home.html'">
+        </div>
+        <div>
+        <input type="text" class="search" placeholder="Search essentials, groceries, and more...">
+        </div>
+        <div>
+            <img id ="loginicon"src="logo/login icon.png" alt="" >
+            <a>Sign in</a>
+        </div>
+        <div>
+        <img id="carticon" src="logo/cart logo 3.png" alt="">
+        <a href="cart.html" >Cart</a>
+    </div>
+    </div>
+    <div class="cont1">
+        <div>
+            <img src="https://www.jiomart.com/msassets/images/login-banner.jpg" alt="">
+        </div>
+        <div id="signupmain">
+    <div>
+        <h2>Sign up</h2>
+        <p>Please enter your details</p>
+    </div> 
+       <div>
+        <form >
+            <div><input type="text" id="sufname" placeholder="Your First Name"></div>
+            <div><input type="text" id="sulname" placeholder="Your Last Name"></div>
+            <div><input type="email" id="suemail" placeholder="Enter your Email Id"></div>
+            <div><input type="password" id="supwd" placeholder="Enter your password"></div>
+            <div> <input type="submit" value="SIGN UP" id="susubmit"></div>
+            <div id="aam"><p>Already a member? <a href="signin.html" style="text-decoration: none ; color:#35E5EA">Sign In</a></p></div>
+           </form>
+       </div>
+     
+       </div>
+    </div>
 </body>
 </html>
+
+<script>
+    let form=document.querySelector("form");
+    let formData=JSON.parse(localStorage.getItem("data"))||[];
+    form.addEventListener("submit",function(e){
+        e.preventDefault();
+        let fname=document.getElementById("sufname").value,
+            lname=document.getElementById("sulname").value,
+            email=document.getElementById("suemail").value,
+            pwd=document.getElementById("supwd").value;
+
+        let exist=formData.length &&
+            JSON.parse(localStorage.getItem("data")).some(data => 
+            data.fname.toLowerCase()==fname.toLowerCase() &&
+            data.lname.toLowerCase()==lname.toLowerCase()
+            );
+
+            if(!exist){
+            formData.push({fname,lname,email,pwd});
+            localStorage.setItem("data",JSON.stringify(formData))
+            form.reset();
+            document.querySelector("#sufname").focus();
+            alert("Account Created.\n\nPlease Sign In using the link below.")
+            }
+            else{
+                alert("Duplicate found!!!\nYou have already signed up")
+                form.reset();
+                document.querySelector("#sufname").focus();
+            }
+          
+    })
+</script>
