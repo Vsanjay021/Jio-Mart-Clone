@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        #gimg{
+            width: 100%;
+            margin-top: 20px;
+        }
+        #elemid{
+            display: flex;
+            width: 100%;
+            /* margin: auto; */
+            text-align: center;
+            margin-bottom: 30px;
+            justify-content: space-around;
+            background-color: rgb(233, 225, 225);
+            /* border-radius: 5px; */
+            margin-top: -3px;
+        }
+         #elemid>div:nth-child(1){
+            /* margin: auto; */
+            margin-left: -150px;
+            margin-top: 5px;
+            /* margin: 10px; */
+        }
+
+
+        
+         #elemid>div:nth-child(1)>input{
+            width: 350px;
+            padding: 15px 15px;
+            border-radius: 5px;
+            border: 1px solid;
+            background-color: rgb(233, 225, 225);
+        }
+        #elemid>div:nth-child(2){
+            margin-right: -160px;
+            
+         } 
+        #SBP{
+            color: rgb(43, 104, 226);
+           border: 1px solid rgb(43, 104, 226);
+           border-radius: 5px;
+           padding: 5px ;
+        } 
+        #ap{
+            padding-left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div><img id="mainlogo"src="logo/mainlogo.png" alt=""
+            onclick="window.location.href='user.html'"></div>
+        <div><input type="text" class="search" placeholder="Search essentials, groceries, and more..."></div>
+        <div>
+        <img id ="loginicon"src="logo/login icon.png" alt="" >
+        <h4 id="username">WELCOME</h4>
+        </div>
+        <div>
+            <a href="home.html">SIGN OUT</a>
+        </div>
+        <div id="f">
+        <img id="carticon2" src="logo/cart logo 3.png" alt="">
+        <a href="cart.html" target="new page"><p id="c2">Cart</p></a>
+    </div>
+    </div>
+    <div class="menubar">
+        <ul>
+            <li class="active"><a href="gro.html">Groceries 🠗</a>
+                <div class="submenu">
+                <ul>
+                    <li> <a href="#">Dairy & bakery</a></li>
+                    <li> <a href="#">Snacks & Branded Fruits</a></li>
+                    <li> <a href="#">Premium Fruits</a></li>
+                </ul>
+                </div>
+            </li>
+
+            <li><a href="#">Home & Kitchen 🠗</a>
+            <div class="submenu">
+                <ul>
+                    <li><a href="#">Home Decor</a></li>
+                    <li><a href="#">Kitchen ware</a></li>
+                    <li><a href="#">Funiture</a></li>
+                    <li><a href="#">Disposables</a></li>
+                </ul>
+            </div>
+            </li>
+
+            <li><a href="#">Fashion 🠗</a>
+            <div class="submenu">
+                <ul>
+                    <li> <a href="mens.html">Mens</a></li>
+                    <li> <a href="womens.html">women</a></li>
+                    <li> <a href="#">Boys</a></li>
+                    <li> <a href="#">Girls</a></li>
+                </ul>
+            </div>
+            </li>
+
+            <li><a href="elec.html">Electronics 🠗</a>
+            <div class="submenu">
+                <ul>
+                    <li> <a href="#">Mobile</a></li>
+                    <li> <a href="#">TV</a></li>
+                    <li> <a href="#">Computer</a></li>
+                    <li> <a href="#">Camera</a></li>
+                </ul>
+            </div>
+            </li>
+
+            <li><a href="#">Beauty 🠗</a>
+            <div class="submenu">
+                <ul>
+                    <li> <a href="#">Fitness</a></li>
+                    <li> <a href="#">Make-up</a></li>
+                    <li> <a href="#">Hair</a></li>
+                    <li> <a href="#">Skin-care</a></li>
+                </ul>
+            </div>
+            </li>
+
+            <li><a href="jew.html">Jewellery 🠗</a>
+            <div class="submenu">
+                <ul>
+                    <li> <a href="#">Fine-Jewellery</a></li>
+                    <li> <a href="#">Jewellery</a></li>
+                </ul>
+            </div>
+            </li>
+
+            <li><a href="#">Home Care 🠗 </a>
+            <div class="submenu">
+                <ul>
+                    <li> <a href="#">Electrical</a></li>
+                    <li> <a href="#">Hardware</a></li>
+                    <li> <a href="#">Plumbing</a></li>
+                    <li> <a href="#">Auto-Care</a></li>
+                </ul>
+            </div>
+            </li>
+
+            <li><a href="#">Toys & Luggage 🠗</a>
+            <div class="submenu">
+                <ul>
+                    <li> <a href="#">Toys & games</a></li>
+                    <li> <a href="#">Bag & Travel luggage</a></li>
+                </ul>
+            </div>
+            </li>
+
+        </ul>
+    </div>
+
+    <img id="gimg" src="https://www.jiomart.com/images/category/2/groceries-20210201.jpeg" alt="">
+    <div id="elemid">
+        <div>
+            <input type="text" placeholder="Search products..." id="SBN">
+        </div>
+        <div>
+            <p>Sort by : <span>
+            <select name="" id="SBP">
+                <option value="">Select</option>
+                <option value="LTH">Low to High</option>
+                <option value="HTL">High to Low</option>
+            </select>
+        </span></p>
+        </div>
+        
+    </div>
+    <p id="ap">ALL PRODUCTS</p>
+    <div id="kitchen">
+        <div>
+            <img src="Daily kitchen essentials/1.jpg" alt="">
+            <h3>good life almonds 500</h3>
+            <p>349.00</p>
+            <button>ADD TO CART</button>
+        </div>
+        <div>
+            <img src="Daily kitchen essentials/2.jpg" alt="">
+            <h3>Daily Rice 25kg</h3>
+            <p>1099</p>
+            <button>ADD TO CART</button>
+        </div>
+        <div>
+            <img src="Daily kitchen essentials/3.jpg" alt="">
+            <h3>GTS Original Kolam Rice 25 kg</h3>
+            <p>1915.00</p>
+            <button>ADD TO CART</button>
+        </div>
+        <div>
+            <img src="Daily kitchen essentials/4.jpg" alt="">
+            <h3>Fortune Sunlite Refined Sunflower Oil 5L</h3>
+            <p>865</p>
+            <button>ADD TO CART</button>
+        </div>
+        <div>
+            <img src="Daily kitchen essentials/5.jpg" alt="">
+            <h3>Tur / Arhar Dal 2 kg</h3>
+            <p>250</p>
+            <button>ADD TO CART</button>
+        </div>
+        <div>
+            <img src="Daily kitchen essentials/6.jpg" alt="">
+            <h3>Premium Sona Masuru Ricee 25 kg</h3>
+            <p>1169</p>
+            <button>ADD TO CART</button>
+        </div>
+        <div>
+            <img src="Daily kitchen essentials/7.jpg" alt="">
+            <h3>Sun Premium Refined Sunflower Oil 1L</h3>
+            <p>156</p>
+            <button>ADD TO CART</button>
+        </div>
+        <div>
+            <img src="Daily kitchen essentials/8.jpg" alt="">
+            <h3>Ruchi Gold Refined palmolein oil 1L</h3>
+            <p>109</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+</body>
+</html>
+<script src="user.js"></script>

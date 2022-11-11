@@ -5,8 +5,320 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        .cc{
+            display: flex;
+            width: 80%;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            margin: auto;
+            border-radius: 10px;
+        }
+        #cartitems>div{
+            /* display: flex; */
+            margin-right: 30px;
+        }
+        img{
+            width: 60px;
+        }
+
+        #fid{
+            margin: auto;
+            margin-left: 40px;
+        }
+        #fid>img{
+            margin: auto;
+        }
+        #cartitems>div{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        #sed{
+            margin-left: 30px;
+        }
+        #cp{
+            /* border: 1px solid red; */
+            
+        }
+        #cp>div:nth-child(1){
+            /* border: 1px solid red; */
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            width: 600px;
+            margin-top: 30px;
+            padding-left: 20px;
+            padding: 20px;
+            margin-right: 20px;
+        }
+        #cp>div:nth-child(2){
+            /* border: 1px solid red; */
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            margin-top: 40px;
+            padding-left: 20px;
+            padding: 20px;
+            margin-right: 20px;
+        }
+        #mc1{
+            margin-left: 150px;
+        }
+        input{
+            width: 300px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid;
+        }
+        #a1{
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 5px;
+            background-color:#35E5EA;
+        }
+        #a1:hover{
+            color: aquamarine;
+            background-color: blueviolet;
+            cursor: pointer;
+        }
+        #a2{
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 5px;
+            background-color:#35E5EA;
+
+        }
+        #a2:hover{
+            color: aquamarine;
+            background-color: blueviolet;
+            cursor: pointer;
+        }
+        .bp{
+            background-color: #35E5EA;
+            border: 1px solid;
+            padding: 5px 10px;
+            border-radius: 50px;
+        }
+        .br{
+            padding: 5px;
+            border: 1px solid;
+            border-radius: 5px;
+            background-color:red;
+            margin-left: 5px;
+        }
+        #cart-total{
+            font-size: 20px;
+            color: black;
+            margin-left: 10px;
+        }
+        #qs{
+            color: black;
+            font-size: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    </style>
 </head>
 <body>
-    My Cart
+    <div class="header">
+        <div><img id="mainlogo"src="logo/mainlogo.png" alt=""></div>
+        <div><input type="text" class="search" placeholder="Search essentials, groceries, and more..."></div>
+        <div>
+        <img id ="loginicon"src="logo/login icon.png" alt="" >
+        <h4 id="username">WELCOME</h4>
+        </div>
+        <div>
+            <a href="home.html">SIGN OUT</a>
+        </div>
+        <div id="f">
+        <img id="carticon2" src="logo/cart logo 3.png" alt="">
+        <a href="cart.html" target="new page"><p id="c2">Cart</p></a>
+    </div>
+    </div>
+
+
+    <div class="menubar">
+        <ul>
+            <li class="active"><a href="gro.html">Groceries 🠗</a>
+                <div class="submenu">
+                <ul>
+                    <li> <a href="#">Dairy & bakery</a></li>
+                    <li> <a href="#">Snacks & Branded Fruits</a></li>
+                    <li> <a href="#">Premium Fruits</a></li>
+                </ul>
+                </div>
+            </li>
+
+            <li><a href="#">Home & Kitchen 🠗</a>
+            <div class="submenu">
+                <ul>
+                    <li><a href="#">Home Decor</a></li>
+                    <li><a href="#">Kitchen ware</a></li>
+                    <li><a href="#">Funiture</a></li>
+                    <li><a href="#">Disposables</a></li>
+                </ul>
+            </div>
+            </li>
+
+            <li><a href="#">Fashion 🠗</a>
+            <div class="submenu">
+                <ul>
+                    <li> <a href="mens.html">Mens</a></li>
+                    <li> <a href="womens.html">women</a></li>
+                    <li> <a href="#">Boys</a></li>
+                    <li> <a href="#">Girls</a></li>
+                </ul>
+            </div>
+            </li>
+
+            <li><a href="elec.html">Electronics 🠗</a>
+            <div class="submenu">
+                <ul>
+                    <li> <a href="#">Mobile</a></li>
+                    <li> <a href="#">TV</a></li>
+                    <li> <a href="#">Computer</a></li>
+                    <li> <a href="#">Camera</a></li>
+                </ul>
+            </div>
+            </li>
+
+            <li><a href="#">Beauty 🠗</a>
+            <div class="submenu">
+                <ul>
+                    <li> <a href="#">Fitness</a></li>
+                    <li> <a href="#">Make-up</a></li>
+                    <li> <a href="#">Hair</a></li>
+                    <li> <a href="#">Skin-care</a></li>
+                </ul>
+            </div>
+            </li>
+
+            <li><a href="#">Jewellery 🠗</a>
+            <div class="submenu">
+                <ul>
+                    <li> <a href="jew.html">Fine-Jewellery</a></li>
+                    <li> <a href="#">Jewellery</a></li>
+                </ul>
+            </div>
+            </li>
+
+            <li><a href="#">Home Care 🠗 </a>
+            <div class="submenu">
+                <ul>
+                    <li> <a href="#">Electrical</a></li>
+                    <li> <a href="#">Hardware</a></li>
+                    <li> <a href="#">Plumbing</a></li>
+                    <li> <a href="#">Auto-Care</a></li>
+                </ul>
+            </div>
+            </li>
+
+            <li><a href="#">Toys & Luggage 🠗</a>
+            <div class="submenu">
+                <ul>
+                    <li> <a href="#">Toys & games</a></li>
+                    <li> <a href="#">Bag & Travel luggage</a></li>
+                </ul>
+            </div>
+            </li>
+
+        </ul>
+    </div>
+
+    <h2 id="mc1">My Cart (<span id="tcn"></span>)</h2>
+
+    <div class="cc">
+        <div id="cartitems">
+
+        </div>
+        <div id="cp">
+            <div>
+                <h2>Apply Coupon</h2>
+                <input type="text" placeholder="Enter Coupon Code">
+                <button id="a1">APPLY</button>
+            </div>
+           <div>
+            <h3>Payment Details</h3>
+            <p>MRP Total :-<span id="cart-total"></span></p>
+            <p>Product Discount <span></span></p>
+            <p>Total Amount </p><span></span>
+            <button id="a2">Place Order</button>
+           </div>
+        </div>
+    </div>
 </body>
 </html>
+<script>
+    // let cartTotal=document.getElementById("cart-total");
+    // console.log(cartTotal);
+    let cartData=JSON.parse(localStorage.getItem("cartItems"));
+    let ci=document.querySelector("#cartitems");
+    displayCart(cartData);
+    function displayCart(data){
+        let cq=document.getElementById("tcn")
+        cq.innerText=data.reduce((a,b) => {
+        return a+b.quantity;
+      },0);
+        let cartTotal=document.getElementById("cart-total");
+      cartTotal.innerText=data.reduce((a,b) => {
+        let tot=a+Number(b.price) * b.quantity;
+        return +tot.toFixed(2);
+      },0);
+        ci.innerHTML="";
+        data.forEach((elem,i) =>{
+            let sp=document.createElement("div");
+            let fdiv=document.createElement("div");
+             fdiv.setAttribute("id","fid");
+            let image=document.createElement("img");
+            image.setAttribute("src",elem.image)
+
+            let sdiv=document.createElement("div");
+            sdiv.setAttribute("id","sed");
+            let title=document.createElement("p");
+            title.innerText=elem.title;
+
+            let price=document.createElement("p");
+            price.innerText=elem.price;
+
+
+            let b1=document.createElement("button")
+            b1.innerText="+";
+            b1.addEventListener("click",function(){
+                data[i].quantity++;
+                localStorage.setItem("cartItems",JSON.stringify(cartData));
+                displayCart(cartData)
+            })
+            b1.setAttribute("class","bp")
+            let b2=document.createElement("button")
+            
+            b2.innerHTML="-";
+            b2.addEventListener("click",function(){
+                if(elem.quantity<=1){
+                    return;
+                }
+                data[i].quantity--;
+                localStorage.setItem("cartItems",JSON.stringify(cartData));
+                displayCart(cartData);
+            })
+            b2.setAttribute("class","bp")
+            let q=document.createElement("span");
+            q.innerText=elem.quantity;
+            q.setAttribute("id","qs");
+            let b3=document.createElement("button");
+            b3.innerText="Remove";
+            b3.setAttribute("class","br")
+            b3.addEventListener("click",function(){
+                deleteData(cartData,i);
+        
+            })
+            sp.append(fdiv,sdiv)
+            ci.append(sp);
+            fdiv.append(image);
+            sdiv.append(title,price,b1,q,b2,b3);
+        })
+    }
+    function deleteData(data,i){
+      data.splice(i,1);
+      localStorage.setItem("cartItems",JSON.stringify(data));
+      displayCart(data);
+    }
+
+            
+</script>
