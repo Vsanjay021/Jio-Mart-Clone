@@ -170,9 +170,8 @@ span{
     grid-template-columns: repeat(3,1fr);
     gap:20px;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-
+    width: 80%;
+    margin: auto;
 }
 #electronics>div>img{
     width:70%;height:200px;
@@ -180,7 +179,7 @@ span{
 #electronics>div{
     padding-top: 20px;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     
 }
 
@@ -197,8 +196,8 @@ span{
     grid-template-columns: repeat(4,1fr);
     gap:20px;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 80%;
+    margin: auto;
    
 }
 #jewellery>div>img{
@@ -207,13 +206,13 @@ span{
 #jewellery>div{
     padding-top: 20px;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 #jewellery>div>button{
     color: white;
     background-color: #35E5EA;
-    border: 1px solid;
+    border: 1px solid red;
     border-radius: 5px;
     padding: 10px 10px;
     margin-bottom: 10px;
@@ -223,8 +222,8 @@ span{
     grid-template-columns: repeat(4,1fr);
     gap:20px;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 80%;
+    margin: auto;
 }
 #clothing>div>img{
     width:70%;height:200px;
@@ -232,7 +231,7 @@ span{
 #clothing>div{
     padding-top: 20px;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 #clothing>div>button{
@@ -242,21 +241,24 @@ span{
     border-radius: 5px;
     padding: 10px 10px;
     margin-bottom: 10px;
+
 }
 
 #kitchen{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap:20px;
+    width: 80%;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    margin: auto;
 }
 
 #kitchen>div{
     padding-top: 20px;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 #kitchen>div>button{
