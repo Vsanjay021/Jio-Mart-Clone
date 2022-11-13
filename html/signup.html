@@ -67,6 +67,7 @@
             );
 
             if(!exist){
+                localStorage.setItem("username",fname);
             formData.push({fname,lname,email,pwd});
             localStorage.setItem("data",JSON.stringify(formData))
             form.reset();

@@ -186,6 +186,9 @@
 </body>
 </html> 
 <script>
+     let urername=document.getElementById("username");
+    let un=localStorage.getItem("username");
+    username.innerText=un;
     let url2="https://fakestoreapi.com/products/category/jewelery";
     let arr=[];
 async function getData2(){
@@ -232,7 +235,7 @@ button.setAttribute("id","bh");
 
 for(let i=0;i<arr1.length;i++){
   if(arr1[i].id== elem.id){
-    alert("Duplicate product");
+    alert("This item is already exist in the cart");
     return;
   }
 }

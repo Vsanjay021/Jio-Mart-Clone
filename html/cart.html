@@ -125,7 +125,7 @@
 </head>
 <body>
     <div class="header">
-        <div><img id="mainlogo"src="logo/mainlogo.png" alt=""></div>
+        <div><img id="mainlogo"src="logo/mainlogo.png" alt="" onclick="window.location.href='user.html'"></div>
         <div><input type="text" class="search" placeholder="Search essentials, groceries, and more..."></div>
         <div>
         <img id ="loginicon"src="logo/login icon.png" alt="" >
@@ -254,6 +254,9 @@
 </body>
 </html>
 <script>
+     let urername=document.getElementById("username");
+    let un=localStorage.getItem("username");
+    username.innerText=un;
      let mrp=localStorage.getItem("mrp")
     let discount=localStorage.getItem("discount")
     let totalamount=localStorage.getItem("totalamount");

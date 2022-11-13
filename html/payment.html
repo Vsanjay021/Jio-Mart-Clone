@@ -28,12 +28,12 @@
        #submit{
         display: block;
         margin: auto;
-        width: 100px;
-       }
-       #submit:hover{
-        color: white;
-        background-color: blue;
+        width: 320px;
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid;
         cursor: pointer;
+        color: blue;
        }
        input{
         width: 300px;
@@ -42,6 +42,23 @@
         border-radius: 5px;
         border: 1px solid;
        }
+       span{
+        color: blue;
+       }
+      #bs{
+        border: 1px solid ;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 15px;
+        background-color: green;
+        color: white;
+        cursor: pointer;
+      }
+      #bs:hover{
+        background-color: red;
+        color: white;
+        border: 1px solid;
+      }
     </style>
 </head>
 <body>
@@ -53,12 +70,20 @@
             <div><input type="number" name="" id="card" placeholder="Enter your card number"></div>
             <div><input type="number" name="" id="cvv" placeholder="CVV"></div>
             <div><input type="date" name="" id="date" placeholder="Expiry date"></div> 
-            <div><input type="submit" id="submit" onclick="verify(event)"></div>
+            <div >
+                <button id="submit" onclick="verify(event)">Pay Rs. <span></span></button>
+                <button id="bs">Send OTP</button>
+        </div>
+        
         </form>
+        
     </div>
 </body>
 </html>
 <script>
+    let totalamount=localStorage.getItem("totalamount");
+    let span=document.querySelector("span")
+    span.innerText=totalamount;
     let card=document.querySelector("#card")
     let cvv=document.querySelector("#cvv")
     let date=document.querySelector("#date")
@@ -67,10 +92,14 @@
         event.preventDefault();
         console.log("hi");
         if(card.value=="939755173030" && cvv.value=="121"){
-            window.location.href="otp.html";
-            alert("Correct credentials")
+            alert("All details are correct")
         }else{
-            alert("wrong credentials");
+            alert("wrong details");
         }
     }
+    let otp=document.querySelector("#bs")
+    otp.addEventListener("click",function(e){
+        e.preventDefault();
+        window.location.href="otp.html"
+    })
 </script>
