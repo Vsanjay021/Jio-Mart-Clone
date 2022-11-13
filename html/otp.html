@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           *{
+            background-color: rgb(244, 240, 240);
+        }
+        div{
+            margin: auto;
+            width: 200px;
+            margin-top: 300px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background-color: white;
+        padding: 10px;
+        }
+        h3{
+            text-align: center;
+            background-color: white;
+        }
+        button{
+            padding: 5px;
+
+            display: block;
+            margin: auto;
+            border: 1px solid;
+            border-radius: 5px;
+        }
+        button:hover{
+            color: white;
+            background-color: blue;
+
+        }
+        input{
+            display: block;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+   <div>
+    <h3>ENTER OTP</h3>
+    <input type="number" name="" id="otp" placeholder="Enter otp">
+    <button>VERIFY</button>
+   </div>
+</body>
+</html>
+<script>
+    document.querySelector("button").addEventListener("click",function(){
+        if(document.querySelector("#otp").value==1234){
+            alert("payment succesful and order is on the way");
+            window.location.href="user.html";
+            localStorage.clear();
+        }else{
+            alert("wrong otp");
+        }
+    })
+</script>
