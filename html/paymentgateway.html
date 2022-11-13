@@ -107,7 +107,7 @@
                 <p>Product Discount :-<span id="pdiscount"></span></p><hr>
                 <p>Total Amount :-<span id="tamount"></span> </p><hr>
                 <p>You save ₹ <span id="save"></span></p>
-                <button id="mp" >Make a Payment</button>
+                <button id="mp" onclick="payment()" >Make a Payment</button>
                </div>
         </div>
     </div>
@@ -125,4 +125,8 @@
     document.querySelector("#pdiscount").innerText=discount;
     document.querySelector("#tamount").innerText=totalamount;
     document.querySelector("#save").innerText=discount;
+    
+    function payment(){
+        window.location.href="payment.html"
+    }
 </script>

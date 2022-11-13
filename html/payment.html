@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: rgb(244, 240, 240);
+        }
+       form{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background-color: white;
+       }
+       h2{
+        text-align: center;
+       }
+       img{
+        display:block;
+        margin: auto;
+        margin-bottom: 20px;
+       }
+       #submit{
+        display: block;
+        margin: auto;
+        width: 100px;
+       }
+       #submit:hover{
+        color: white;
+        background-color: blue;
+        cursor: pointer;
+       }
+       input{
+        width: 300px;
+        padding: 10px;
+        margin: 15px;
+        border-radius: 5px;
+        border: 1px solid;
+       }
+    </style>
+</head>
+<body>
+    <h2 >Payment Gateway</h2>
+    <img src="logo/card_img.png" alt="">
+    <div>
+        <form action="">
+            <div><input type="text" name="" id="name" placeholder="Your Name on the card"></div>
+            <div><input type="number" name="" id="card" placeholder="Enter your card number"></div>
+            <div><input type="number" name="" id="cvv" placeholder="CVV"></div>
+            <div><input type="date" name="" id="date" placeholder="Expiry date"></div> 
+            <div><input type="submit" id="submit" onclick="verify(event)"></div>
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    let card=document.querySelector("#card")
+    let cvv=document.querySelector("#cvv")
+    let date=document.querySelector("#date")
+
+    function verify(event){
+        event.preventDefault();
+        console.log("hi");
+        if(card.value=="939755173030" && cvv.value=="121"){
+            window.location.href="otp.html";
+            alert("Correct credentials")
+        }else{
+            alert("wrong credentials");
+        }
+    }
+</script>
