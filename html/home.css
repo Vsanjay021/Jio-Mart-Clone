@@ -148,7 +148,7 @@ span{
 }
 #bt1{
     position: absolute;
-    top: 1240px;
+    top: 1250px;
     left: 12px;
     width: 27px;
     height: 44px;
@@ -158,13 +158,29 @@ span{
 #bt2{
     position: absolute;
     right: 4px;
-    top: 1240px;
+    top: 1250px;
     width: 27px;
     height: 44px;
     cursor: pointer;
     
 }
-
+#gbt1{
+    position: absolute;
+    top: 1310px;
+    left: 12px;
+    width: 27px;
+    height: 44px;
+    cursor: pointer;
+    
+}
+#gbt2{
+    position: absolute;
+    right: 4px;
+    top: 1310px;
+    width: 27px;
+    height: 44px;
+    cursor: pointer;
+}
 #electronics{
     display: grid;
     grid-template-columns: repeat(3,1fr);

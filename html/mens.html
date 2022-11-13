@@ -183,6 +183,9 @@
 </body>
 </html>
 <script>
+     let urername=document.getElementById("username");
+    let un=localStorage.getItem("username");
+    username.innerText=un;
     let arr=[];
 let url4="https://fakestoreapi.com/products/category/men's clothing";
 let cartItems=JSON.parse(localStorage.getItem("cartItems"))||[];
@@ -215,7 +218,7 @@ let cartItems=JSON.parse(localStorage.getItem("cartItems"))||[];
 
 for(let i=0;i<arr1.length;i++){
   if(arr1[i].id== elem.id){
-    alert("Duplicate product");
+    alert("This item is already exist in the cart");
     return;
   }
 }

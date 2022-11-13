@@ -6,48 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-           *{
-            background-color: rgb(244, 240, 240);
-        }
         div{
             margin: auto;
-            width: 200px;
+            width: 400px;
             margin-top: 300px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         background-color: white;
-        padding: 10px;
+        padding: 25px;
+
         }
-        h3{
+        h2{
             text-align: center;
             background-color: white;
         }
         button{
-            padding: 5px;
+            padding: 10px 15px;
 
             display: block;
             margin: auto;
             border: 1px solid;
             border-radius: 5px;
+
         }
         button:hover{
             color: white;
-            background-color: blue;
+            background-color: red;
 
         }
         input{
             display: block;
             margin: auto;
             margin-bottom: 10px;
-            padding: 5px;
+            padding: 10px;
             border-radius: 5px;
             border: 1px solid;
+            width: 300px;
         }
     </style>
 </head>
 <body>
    <div>
-    <h3>ENTER OTP</h3>
-    <input type="number" name="" id="otp" placeholder="Enter otp">
+    <h2>Enter your OTP</h2>
+    <input type="number" name="" id="otp" placeholder="Enter your OTP">
     <button>VERIFY</button>
    </div>
 </body>
@@ -57,7 +57,10 @@
         if(document.querySelector("#otp").value==1234){
             alert("payment succesful and order is on the way");
             window.location.href="user.html";
-            localStorage.clear();
+            localStorage.removeItem("cartItems");
+            localStorage.removeItem("totalAmount");
+            localStorage.removeItem("mrp");
+            localStorage.removeItem("discount");
         }else{
             alert("wrong otp");
         }

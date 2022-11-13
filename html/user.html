@@ -14,7 +14,7 @@
             <div><input type="text" class="search" placeholder="Search essentials, groceries, and more..."></div>
             <div>
             <img id ="loginicon"src="logo/login icon.png" alt="" >
-            <h4 id="username">WELCOME</h4>
+            <h4 id="username"></h4>
             </div>
             <div>
                 <a href="home.html">SIGN OUT</a>
@@ -204,8 +204,8 @@
             </div>
         </div>
         
-        <button id="bt1" onclick="prev1()"><</button>
-        <button id="bt2" onclick="next1()">></button>
+        <button id="gbt1" onclick="prev1()"><</button>
+        <button id="gbt2" onclick="next1()">></button>
         <div class="mid">
             <div><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1666083460_fortune.jpg" alt=""></div>
             <div><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1667905014_Cold-Pressed-Oil-Belona-Ghee_600x350.jpg" alt=""></div>
@@ -329,6 +329,9 @@
 
 </html>
 <script>
+    let urername=document.getElementById("username");
+    let un=localStorage.getItem("username");
+    username.innerText=un;
     let img = [
         "./slideimage/1.jpg",
         "./slideimage/2.jpg",
@@ -410,7 +413,7 @@
         }
     }
     getData();
-
+    let cartItems=JSON.parse(localStorage.getItem("cartItems"))||[];
     function displayBox(out){
 
         out.forEach((elem,i) =>{
@@ -434,10 +437,23 @@
 
             let button=document.createElement("button");
             button.innerText="ADD TO CART";
+            button.addEventListener("click",function(){
+                let arr1=JSON.parse(localStorage.getItem("cartItems"))||[];
 
+        for(let i=0;i<arr1.length;i++){
+          if(arr1[i].id== elem.id){
+            alert("This item is already exist in the cart");
+            return;
+          }
+        }
+            cartItems.push({...elem,quantity:1});
+            localStorage.setItem("cartItems",JSON.stringify(cartItems));
+            alert("product Added To cart");
+            })
             div.append(cdiv);
             cdiv.append(image,title,cat,price,button);
-        })
+            })
+            
        
     }
 
@@ -481,7 +497,19 @@ out.forEach((elem,i) =>{
 
     let button=document.createElement("button");
     button.innerText="ADD TO CART";
+    button.addEventListener("click",function(){
+                let arr1=JSON.parse(localStorage.getItem("cartItems"))||[];
 
+                for(let i=0;i<arr1.length;i++){
+                if(arr1[i].id== elem.id){
+                    alert("This item is already exist in the cart");
+                    return;
+                }
+                }
+                    cartItems.push({...elem,quantity:1});
+                localStorage.setItem("cartItems",JSON.stringify(cartItems));
+                alert("product Added To cart");
+                })
     div.append(cdiv);
     cdiv.append(image,title,cat,price,button);
 })
@@ -528,6 +556,19 @@ out.forEach((elem,i) =>{
 
     let button=document.createElement("button");
     button.innerText="ADD TO CART";
+    button.addEventListener("click",function(){
+                let arr1=JSON.parse(localStorage.getItem("cartItems"))||[];
+
+        for(let i=0;i<arr1.length;i++){
+          if(arr1[i].id== elem.id){
+            alert("This item is already exist in the cart");
+            return;
+          }
+        }
+            cartItems.push({...elem,quantity:1});
+            localStorage.setItem("cartItems",JSON.stringify(cartItems));
+            alert("product Added To cart");
+            })
 
     div.append(cdiv);
     cdiv.append(image,title,cat,price,button);

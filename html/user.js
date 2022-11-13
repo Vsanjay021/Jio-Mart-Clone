@@ -44,7 +44,7 @@
 
         for(let i=0;i<arr1.length;i++){
           if(arr1[i].id== elem.id){
-            alert("Duplicate product");
+            alert("This item is already exist in the cart");
             return;
           }
         }
